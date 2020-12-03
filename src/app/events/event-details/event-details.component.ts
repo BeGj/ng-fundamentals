@@ -18,8 +18,18 @@ export class EventDetailsComponent implements OnInit {
   constructor(private eventService: EventService, private route: ActivatedRoute) {
   }
   ngOnInit(): void {
-    const id: number = +this.route.snapshot.params.id;
-    this.event = this.eventService.getEvent(id);
+    this.route.params.subscribe(params => {
+      const id: number = +params.id;
+      const eventExists: IEvent | undefined = this.eventService.getEvent(id);
+      if (eventExists) {
+        this.event = eventExists;
+        this.addMode = false;
+        this.filterBy = 'all';
+        this.sortBy = 'name';
+      } else {
+        console.error('Event could not be found');
+      }
+    });
   }
 
   addSession() {
@@ -28,8 +38,13 @@ export class EventDetailsComponent implements OnInit {
 
   saveNewSession(sessionBase: SessionBase): void {
     const syncedSession = this.eventService.createSession(this.event.id, sessionBase);
-    this.event.sessions.push(syncedSession);
-    this.addMode = false;
+    if (syncedSession) {
+      this.event.sessions.push(syncedSession);
+      this.addMode = false;
+    } else {
+      console.error('Session could not be created');
+
+    }
   }
   cancelAddSession(): void {
     this.addMode = false;

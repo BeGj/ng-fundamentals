@@ -23,6 +23,7 @@ export const events: IEvent[] = [
           how to write them, and how to get the new AI CLI to write
           them for you. Given by the famous PBD, president of Angular
           University (formerly Oxford University)`,
+          eventId: 1,
           voters: ['bradgreen', 'igorminar', 'martinfowler']
         },
         {
@@ -35,6 +36,7 @@ export const events: IEvent[] = [
           the right management they can be even more productive, without
           overworking them. In this session I'll show you how to get the
           best results from the talent you already have on staff.`,
+          eventId: 1,
           voters: ['johnpapa', 'bradgreen', 'igorminar', 'martinfowler']
         },
         {
@@ -48,6 +50,7 @@ export const events: IEvent[] = [
           your users devices before they even hit your site using the
           new predictive algorithms and thought reading software
           built into Angular 4.`,
+          eventId: 1,
           voters: []
         },
         {
@@ -62,6 +65,7 @@ export const events: IEvent[] = [
           Angular 6 even though no code has yet been written for it. We'll
           look at what it might do, and how to convince your manager to
           hold off on any new apps until it's released`,
+          eventId: 1,
           voters: []
         },
         {
@@ -74,6 +78,7 @@ export const events: IEvent[] = [
           will give you everything you need to know about Angular 4 to
           get started with it today and be building UI's for your self
           driving cars and butler-bots in no time.`,
+          eventId: 1,
           voters: ['bradgreen', 'igorminar']
         }
       ]
@@ -97,6 +102,7 @@ export const events: IEvent[] = [
           you will also learn how to make the most of your team's efforts. Other topics
           will be convincing your manager that testing is a good idea, and using the new
           protractor tool for end to end testing.`,
+          eventId: 2,
           voters: ['bradgreen', 'igorminar']
         },
         {
@@ -105,6 +111,7 @@ export const events: IEvent[] = [
           presenter: 'David East',
           duration: 3,
           level: 'Intermediate',
+          eventId: 2,
           abstract: `In this workshop, David East will show you how to use Angular with the new
           ultra-real-time 5D Firebase back end, hosting platform, and wine recommendation engine.`,
           voters: ['bradgreen', 'igorminar', 'johnpapa']
@@ -114,6 +121,7 @@ export const events: IEvent[] = [
           name: 'Reading the Angular 4 Source',
           presenter: 'Patrick Stapleton',
           duration: 2,
+          eventId: 2,
           level: 'Intermediate',
           abstract: `Angular 4's source code may be over 25 million lines of code, but it's really
           a lot easier to read and understand then you may think. Patrick Stapleton will talk
@@ -125,6 +133,7 @@ export const events: IEvent[] = [
           name: 'Hail to the Lukas',
           presenter: 'Lukas Ruebbelke',
           duration: 1,
+          eventId: 2,
           level: 'Beginner',
           abstract: `In this session, Lukas will present the
           secret to being awesome, and how he became the President
@@ -152,6 +161,7 @@ export const events: IEvent[] = [
           name: 'How Elm Powers Angular 4',
           presenter: 'Murphy Randle',
           duration: 2,
+          eventId: 3,
           level: 'Intermediate',
           abstract: `We all know that Angular is written in Elm, but did you
           know how the source code is really written? In this exciting look
@@ -164,6 +174,7 @@ export const events: IEvent[] = [
           name: 'Angular and React together',
           presenter: 'Jamison Dance',
           duration: 2,
+          eventId: 3,
           level: 'Intermediate',
           abstract: `React v449.6 has just been released. Let's see how to use
           this new version with Angular to create even more impressive applications.`,
@@ -173,6 +184,7 @@ export const events: IEvent[] = [
           id: 3,
           name: 'Redux Woes',
           presenter: 'Rob Wormald',
+          eventId: 3,
           duration: 1,
           level: 'Intermediate',
           abstract: `Everyone is using Redux for everything from Angular to React to
@@ -184,6 +196,7 @@ export const events: IEvent[] = [
         {
           id: 4,
           name: 'ng-wat again!!',
+          eventId: 3,
           presenter: 'Shai Reznik',
           duration: 1,
           level: 'Beginner',
@@ -195,6 +208,7 @@ export const events: IEvent[] = [
           id: 5,
           name: 'Dressed for Success',
           presenter: 'Ward Bell',
+          eventId: 3,
           duration: 2,
           level: 'Beginner',
           abstract: `Being a developer in 2037 is about more than just writing bug-free code.
@@ -205,6 +219,7 @@ export const events: IEvent[] = [
         },
         {
           id: 6,
+          eventId: 3,
           name: 'These aren\'t the directives you\'re looking for',
           presenter: 'John Papa',
           duration: 2,
@@ -231,6 +246,7 @@ export const events: IEvent[] = [
       sessions: [
         {
           id: 1,
+          eventId: 4,
           name: 'Diversity in Tech',
           presenter: 'Sir Dave Smith',
           duration: 2,
@@ -245,6 +261,7 @@ export const events: IEvent[] = [
           id: 2,
           name: 'World Peace and Angular',
           presenter: 'US Secretary of State Zach Galifianakis',
+          eventId: 4,
           duration: 2,
           level: 'Beginner',
           abstract: `Angular has been used in most of the major peace brokering that has
@@ -255,6 +272,7 @@ export const events: IEvent[] = [
         {
           id: 3,
           name: 'Using Angular with Androids',
+          eventId: 4,
           presenter: 'Dan Wahlin',
           duration: 3,
           level: 'Advanced',
@@ -281,6 +299,7 @@ export const events: IEvent[] = [
         {
           id: 1,
           name: 'Gambling with Angular',
+          eventId: 5,
           presenter: 'John Papa',
           duration: 1,
           level: 'Intermediate',
@@ -295,6 +314,7 @@ export const events: IEvent[] = [
           id: 2,
           name: 'Angular 4 in 60ish Minutes',
           presenter: 'Dan Wahlin',
+          eventId: 5,
           duration: 2,
           level: 'Beginner',
           abstract: `Get the skinny on Angular 4 for anyone new to this great new technology.

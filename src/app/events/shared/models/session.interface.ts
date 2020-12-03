@@ -1,6 +1,7 @@
 export interface ISession extends SessionBase {
   id: number;
   voters: string[];
+  eventId: number;
 }
 
 

@@ -3,7 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ToastService, CollapsibleWellComponent } from './common/';
+import {
+  TOASTR_TOKEN,
+  Toastr,
+  JQUERY_TOKEN,
+  CollapsibleWellComponent,
+  SimpleModalComponent,
+  ModalTriggerDirective
+} from './common/';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './nav/navbar/navbar.component';
@@ -23,8 +30,8 @@ import {
   DurationPipe
 } from './events/';
 import { AuthService } from './user/shared';
-
-
+declare let toastr: Toastr;
+declare let jQuery: any;
 @NgModule({
   imports: [
     BrowserModule,
@@ -44,10 +51,13 @@ import { AuthService } from './user/shared';
     SessionListComponent,
     CollapsibleWellComponent,
     DurationPipe,
+    SimpleModalComponent,
+    ModalTriggerDirective,
   ],
   providers: [
     EventService,
-    ToastService,
+    {provide: TOASTR_TOKEN, useValue: toastr},
+    {provide: JQUERY_TOKEN, useValue: jQuery},
     EventRouteGuard,
     EventListResolver,
     { provide: 'canDeactivateCreateEvent', useValue: checkDirtyState},
