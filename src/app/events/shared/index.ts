@@ -1,4 +1,5 @@
 export * from './event.service';
+export * from './vote.service';
 export * from './models/event.interface';
 export * from './models/session.interface';
 export * from './restricted-words.validator';

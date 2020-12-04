@@ -7,3 +7,4 @@ export * from './session-list/session-list.component';
 export * from './event-list.resolver';
 export * from './shared/index';
 export * from './event-route.guard';
+export * from './upvote-session/upvote-session.component';

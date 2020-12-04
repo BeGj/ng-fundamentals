@@ -27,6 +27,7 @@ import {
   CreateEventComponent,
   CreateSessionComponent,
   SessionListComponent,
+  UpvoteSessionComponent,
   DurationPipe
 } from './events/';
 import { AuthService } from './user/shared';
@@ -53,6 +54,7 @@ declare let jQuery: any;
     DurationPipe,
     SimpleModalComponent,
     ModalTriggerDirective,
+    UpvoteSessionComponent,
   ],
   providers: [
     EventService,
